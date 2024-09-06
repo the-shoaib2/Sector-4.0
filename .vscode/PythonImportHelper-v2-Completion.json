@@ -1,0 +1,1120 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "networkx",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "networkx",
+        "description": "networkx",
+        "detail": "networkx",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "pygame",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pygame",
+        "description": "pygame",
+        "detail": "pygame",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "pygame.locals",
+        "description": "pygame.locals",
+        "isExtraImport": true,
+        "detail": "pygame.locals",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "queue",
+        "description": "queue",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "CORS",
+        "importPath": "flask_cors",
+        "description": "flask_cors",
+        "isExtraImport": true,
+        "detail": "flask_cors",
+        "documentation": {}
+    },
+    {
+        "label": "DeepFace",
+        "importPath": "deepface",
+        "description": "deepface",
+        "isExtraImport": true,
+        "detail": "deepface",
+        "documentation": {}
+    },
+    {
+        "label": "pywhatkit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pywhatkit",
+        "description": "pywhatkit",
+        "detail": "pywhatkit",
+        "documentation": {}
+    },
+    {
+        "label": "ParameterSource",
+        "importPath": "click.decorators",
+        "description": "click.decorators",
+        "isExtraImport": true,
+        "detail": "click.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "Algorithms.venv.Scripts.activate_this",
+        "description": "Algorithms.venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "Algorithms.venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.0001",
+        "description": "Algorithms.0001",
+        "peekOfCode": "n = int(input())\nprint(2*n*n - n +1)",
+        "detail": "Algorithms.0001",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.1180A",
+        "description": "Algorithms.1180A",
+        "peekOfCode": "n = int(input())\nres =2 * n * (n - 1) + 1\nprint(res)",
+        "detail": "Algorithms.1180A",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.1stAlgo",
+        "description": "Algorithms.1stAlgo",
+        "peekOfCode": "n = int(input())\nprint (\"Enter the numbers in the array:\")\narr = list (map (int, input ().split ())) [:n]\nprint (\"The array is:\", arr)",
+        "detail": "Algorithms.1stAlgo",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Algorithms.1stAlgo",
+        "description": "Algorithms.1stAlgo",
+        "peekOfCode": "arr = list (map (int, input ().split ())) [:n]\nprint (\"The array is:\", arr)",
+        "detail": "Algorithms.1stAlgo",
+        "documentation": {}
+    },
+    {
+        "label": "bubble_sort",
+        "kind": 2,
+        "importPath": "Algorithms.BubbleSort",
+        "description": "Algorithms.BubbleSort",
+        "peekOfCode": "def bubble_sort(arr,n):\n    for i in range(n - 1):\n        j=i\n        for j in range(n  - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]  # swap elements if the current\n# Get the number of elements\nn = int(input())\n# Get space-separated input values and convert to a list of integers\narr = list(map(int, input().split()))",
+        "detail": "Algorithms.BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.BubbleSort",
+        "description": "Algorithms.BubbleSort",
+        "peekOfCode": "n = int(input())\n# Get space-separated input values and convert to a list of integers\narr = list(map(int, input().split()))\n# Use the sorted function to sort the array\n# sorted_arr = sorted(arr)\n# Apply Bubble Sort\nbubble_sort(arr,n)\n# Print the sorted array\nprint(\"Sorted Array:\", end=\" \")\nfor i in arr:",
+        "detail": "Algorithms.BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Algorithms.BubbleSort",
+        "description": "Algorithms.BubbleSort",
+        "peekOfCode": "arr = list(map(int, input().split()))\n# Use the sorted function to sort the array\n# sorted_arr = sorted(arr)\n# Apply Bubble Sort\nbubble_sort(arr,n)\n# Print the sorted array\nprint(\"Sorted Array:\", end=\" \")\nfor i in arr:\n    print(i,end=\" \")\nprint()",
+        "detail": "Algorithms.BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "s",
+        "kind": 5,
+        "importPath": "Algorithms.Game_With_String",
+        "description": "Algorithms.Game_With_String",
+        "peekOfCode": "s = input().strip()\nstack = []\nk = 0\nfor char in s:\n    if len(stack) == 0:\n        stack.append(char)\n        continue\n    if stack[-1] == char:\n        k += 1\n        stack.pop()",
+        "detail": "Algorithms.Game_With_String",
+        "documentation": {}
+    },
+    {
+        "label": "stack",
+        "kind": 5,
+        "importPath": "Algorithms.Game_With_String",
+        "description": "Algorithms.Game_With_String",
+        "peekOfCode": "stack = []\nk = 0\nfor char in s:\n    if len(stack) == 0:\n        stack.append(char)\n        continue\n    if stack[-1] == char:\n        k += 1\n        stack.pop()\n    else:",
+        "detail": "Algorithms.Game_With_String",
+        "documentation": {}
+    },
+    {
+        "label": "k",
+        "kind": 5,
+        "importPath": "Algorithms.Game_With_String",
+        "description": "Algorithms.Game_With_String",
+        "peekOfCode": "k = 0\nfor char in s:\n    if len(stack) == 0:\n        stack.append(char)\n        continue\n    if stack[-1] == char:\n        k += 1\n        stack.pop()\n    else:\n        stack.append(char)",
+        "detail": "Algorithms.Game_With_String",
+        "documentation": {}
+    },
+    {
+        "label": "find_coordinates",
+        "kind": 2,
+        "importPath": "Algorithms.Graph",
+        "description": "Algorithms.Graph",
+        "peekOfCode": "def find_coordinates(search_string):\n    coordinates = [(i, j) for i in range(rows) for j in range(cols) if matrix[i][j].lower() in search_string.lower()]\n    return coordinates\n# Input string\ninput_name = input(\"Input: \")\n# Find and print coordinates\noutput_coordinates = find_coordinates(input_name)\nprint(f\"Output: {output_coordinates}\")",
+        "detail": "Algorithms.Graph",
+        "documentation": {}
+    },
+    {
+        "label": "G",
+        "kind": 5,
+        "importPath": "Algorithms.Graph",
+        "description": "Algorithms.Graph",
+        "peekOfCode": "G = nx.Graph()\n# Define the (8x4) matrix\nmatrix = [['q', 'w', 'e', 'r','<'],\n          ['t', 'y', 'u', 'I','?'],\n          ['o', 'P', 'A', 'S','+'],\n          ['d', 'F', 'G', 'h','-'],\n          ['j', 'k', 'L', 'z',')'],\n          ['X', 'C', 'v', 'b','('],\n          ['n', 'm', '!', '@','*'],\n          ['#', '$', '%', '^','&']]",
+        "detail": "Algorithms.Graph",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "Algorithms.Graph",
+        "description": "Algorithms.Graph",
+        "peekOfCode": "matrix = [['q', 'w', 'e', 'r','<'],\n          ['t', 'y', 'u', 'I','?'],\n          ['o', 'P', 'A', 'S','+'],\n          ['d', 'F', 'G', 'h','-'],\n          ['j', 'k', 'L', 'z',')'],\n          ['X', 'C', 'v', 'b','('],\n          ['n', 'm', '!', '@','*'],\n          ['#', '$', '%', '^','&']]\n# Add nodes and edges to the graph based on matrix\nrows, cols = len(matrix), len(matrix[0])",
+        "detail": "Algorithms.Graph",
+        "documentation": {}
+    },
+    {
+        "label": "input_name",
+        "kind": 5,
+        "importPath": "Algorithms.Graph",
+        "description": "Algorithms.Graph",
+        "peekOfCode": "input_name = input(\"Input: \")\n# Find and print coordinates\noutput_coordinates = find_coordinates(input_name)\nprint(f\"Output: {output_coordinates}\")",
+        "detail": "Algorithms.Graph",
+        "documentation": {}
+    },
+    {
+        "label": "output_coordinates",
+        "kind": 5,
+        "importPath": "Algorithms.Graph",
+        "description": "Algorithms.Graph",
+        "peekOfCode": "output_coordinates = find_coordinates(input_name)\nprint(f\"Output: {output_coordinates}\")",
+        "detail": "Algorithms.Graph",
+        "documentation": {}
+    },
+    {
+        "label": "T",
+        "kind": 5,
+        "importPath": "Algorithms.Horror_Dash",
+        "description": "Algorithms.Horror_Dash",
+        "peekOfCode": "T = int(input())\nfor t in range(1, T + 1):\n    # Read the number of creatures\n    N = int(input())\n    # Read the speeds of creatures\n    creature_speeds = list(map(int, input().split()))\n    # Find the maximum speed\n    max_speed = max(creature_speeds)\n    # Output the result\n    print(f\"Case {t}: {max_speed}\")",
+        "detail": "Algorithms.Horror_Dash",
+        "documentation": {}
+    },
+    {
+        "label": "lift",
+        "kind": 2,
+        "importPath": "Algorithms.Lift",
+        "description": "Algorithms.Lift",
+        "peekOfCode": "def lift(a, b):\n    if a <= b:\n        return b * 4 + 19\n    else:\n        return (2 * a - b) * 4 + 19\nn = int(input())\nfor c in range(1, n + 1):\n    a, b = map(int, input().split())\n    res = lift(a, b)\n    print(f\"Case {c}: {res}\")",
+        "detail": "Algorithms.Lift",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.Lift",
+        "description": "Algorithms.Lift",
+        "peekOfCode": "n = int(input())\nfor c in range(1, n + 1):\n    a, b = map(int, input().split())\n    res = lift(a, b)\n    print(f\"Case {c}: {res}\")",
+        "detail": "Algorithms.Lift",
+        "documentation": {}
+    },
+    {
+        "label": "print_hi",
+        "kind": 2,
+        "importPath": "Algorithms.main",
+        "description": "Algorithms.main",
+        "peekOfCode": "def print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n# Press the green button in the gutter to run the script.\nif __name__ == '__main__':\n    print_hi('PyCharm')\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/",
+        "detail": "Algorithms.main",
+        "documentation": {}
+    },
+    {
+        "label": "merge_sort",
+        "kind": 2,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "def merge_sort(arr, left, right):\n    # Recursive function to perform Merge Sort\n    if left < right:\n        mid = (left + right) // 2\n        # Recursively sort the left and right halves\n        merge_sort(arr, left, mid)\n        merge_sort(arr, mid + 1, right)\n        # Merge the sorted halves\n        merge(arr, left, mid, right)\ndef merge(arr, left, mid, right):",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "def merge(arr, left, mid, right):\n    n1 = mid - left + 1\n    n2 = right - mid\n    # Create temporary arrays\n    L = [0] * n1\n    R = [0] * n2\n    # Copy data to temporary arrays L[] and R[]\n    for i in range(n1):\n        L[i] = arr[left + i]\n    for j in range(n2):",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "merge_sort",
+        "kind": 2,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "def merge_sort(arr, left, right):\n    # Recursive function to perform Merge Sort\n    if left < right:\n        mid = (left + right) // 2\n        # Recursively sort the left and right halves\n        merge_sort(arr, left, mid)\n        merge_sort(arr, mid + 1, right)\n        # Merge the sorted halves\n        merge(arr, left, mid, right)\ndef merge(arr, left, mid, right):",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "merge",
+        "kind": 2,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "def merge(arr, left, mid, right):\n    n1 = mid - left + 1\n    n2 = right - mid\n    # Create temporary arrays\n    L = [0] * n1\n    R = [0] * n2\n    # Copy data to temporary arrays L[] and R[]\n    for i in range(n1):\n        L[i] = arr[left + i]\n    for j in range(n2):",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "n = int(input())\narr = list(map(int, input().split()))\ndef merge_sort(arr, left, right):\n    # Recursive function to perform Merge Sort\n    if left < right:\n        mid = (left + right) // 2\n        # Recursively sort the left and right halves\n        merge_sort(arr, left, mid)\n        merge_sort(arr, mid + 1, right)\n        # Merge the sorted halves",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "arr = list(map(int, input().split()))\ndef merge_sort(arr, left, right):\n    # Recursive function to perform Merge Sort\n    if left < right:\n        mid = (left + right) // 2\n        # Recursively sort the left and right halves\n        merge_sort(arr, left, mid)\n        merge_sort(arr, mid + 1, right)\n        # Merge the sorted halves\n        merge(arr, left, mid, right)",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "n = int(input())\narr = list(map(int, input().split()))\nprint(\"Sorted array:\", arr)\nmerge_sort(arr, 0, len(arr) - 1)\nprint(\"Sorted array:\", arr)",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "Algorithms.MeargeSort",
+        "description": "Algorithms.MeargeSort",
+        "peekOfCode": "arr = list(map(int, input().split()))\nprint(\"Sorted array:\", arr)\nmerge_sort(arr, 0, len(arr) - 1)\nprint(\"Sorted array:\", arr)",
+        "detail": "Algorithms.MeargeSort",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "Algorithms.test",
+        "description": "Algorithms.test",
+        "peekOfCode": "def fib(n, dp = {}):\n    if n not in dp:\n        if n <= 1:\n            dp[n] = n\n        else:\n            dp[n] = fib(n-1, dp) + fib(n-2, dp)\n    return dp[n]\nprint(\"Fibonacci Number is : \", fib(n))",
+        "detail": "Algorithms.test",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "Algorithms.test",
+        "description": "Algorithms.test",
+        "peekOfCode": "n = int(input(\"Enter Value : \"))\ndef fib(n, dp = {}):\n    if n not in dp:\n        if n <= 1:\n            dp[n] = n\n        else:\n            dp[n] = fib(n-1, dp) + fib(n-2, dp)\n    return dp[n]\nprint(\"Fibonacci Number is : \", fib(n))",
+        "detail": "Algorithms.test",
+        "documentation": {}
+    },
+    {
+        "label": "welcomeScreen",
+        "kind": 2,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "def welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base\n    playerx = int(SCREENWIDTH/4)\n    playery = int((SCREENHEIGHT - GAME_SPRITES['player'].get_height())/2)\n    messagex = int((SCREENWIDTH - GAME_SPRITES['message'].get_width())/2)\n    messagey = int(SCREENHEIGHT*0.13)\n    basex = 0",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "mainGame",
+        "kind": 2,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "def mainGame():\n    score = 0\n    playerx = int(SCREENWIDTH/5)\n    playery = int(SCREENWIDTH/2)\n    basex = 0\n    # Create 2 pipes for blitting on the screen\n    newPipe1 = getRandomPipe()\n    newPipe2 = getRandomPipe()\n    # Initialize lists for upper and lower pipes\n    upperPipes = [",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "isCollide",
+        "kind": 2,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "def isCollide(playerx, playery, upperPipes, lowerPipes):\n    # Check if the player hits the ground or goes above the screen\n    if playery > GROUNDY - 25 or playery < 0:\n        GAME_SOUNDS['hit'].play()\n        return True\n    # Check if the player collides with any of the pipes\n    for pipe in upperPipes:\n        pipeHeight = GAME_SPRITES['pipe'][0].get_height()\n        if (playery < pipeHeight + pipe['y'] and abs(playerx - pipe['x']) < GAME_SPRITES['pipe'][0].get_width()):\n            GAME_SOUNDS['hit'].play()",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "getRandomPipe",
+        "kind": 2,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "def getRandomPipe():\n    \"\"\"\n    Generate positions of two pipes (one bottom straight and one top rotated) for blitting on the screen\n    \"\"\"\n    pipeHeight = GAME_SPRITES['pipe'][0].get_height()\n    offset = SCREENHEIGHT / 3\n    y2 = offset + random.randrange(0, int(SCREENHEIGHT - GAME_SPRITES['base'].get_height() - 1.2 * offset))\n    pipeX = SCREENWIDTH + 10\n    y1 = pipeHeight - y2 + offset\n    pipe = [",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "FPS",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "FPS = 23\nSCREENWIDTH = 289\nSCREENHEIGHT = 511\nSCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))\nGROUNDY = SCREENHEIGHT * 0.9\nGAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCREENWIDTH",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "SCREENWIDTH = 289\nSCREENHEIGHT = 511\nSCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))\nGROUNDY = SCREENHEIGHT * 0.9\nGAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCREENHEIGHT",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "SCREENHEIGHT = 511\nSCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))\nGROUNDY = SCREENHEIGHT * 0.9\nGAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "SCREEN",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "SCREEN = pygame.display.set_mode((SCREENWIDTH, SCREENHEIGHT))\nGROUNDY = SCREENHEIGHT * 0.9\nGAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "GROUNDY",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "GROUNDY = SCREENHEIGHT * 0.9\nGAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "GAME_SPRITES",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "GAME_SPRITES = {}\nGAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "GAME_SOUNDS",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "GAME_SOUNDS = {}\nPLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base\n    playerx = int(SCREENWIDTH/4)",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "PLAYER",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "PLAYER = 'gallery/sprites/bird.png'\nBACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base\n    playerx = int(SCREENWIDTH/4)\n    playery = int((SCREENHEIGHT - GAME_SPRITES['player'].get_height())/2)",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "BACKGROUND",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "BACKGROUND = 'gallery/sprites/background.png'\nPIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base\n    playerx = int(SCREENWIDTH/4)\n    playery = int((SCREENHEIGHT - GAME_SPRITES['player'].get_height())/2)\n    messagex = int((SCREENWIDTH - GAME_SPRITES['message'].get_width())/2)",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "PIPE",
+        "kind": 5,
+        "importPath": "GAMES.Flopy Bird.main",
+        "description": "GAMES.Flopy Bird.main",
+        "peekOfCode": "PIPE = 'gallery/sprites/pipe.png'\ndef welcomeScreen():\n    \"\"\"\n    Shows welcome images on the screen\n    \"\"\"\n    # Initial position for the player, message, and base\n    playerx = int(SCREENWIDTH/4)\n    playery = int((SCREENHEIGHT - GAME_SPRITES['player'].get_height())/2)\n    messagex = int((SCREENWIDTH - GAME_SPRITES['message'].get_width())/2)\n    messagey = int(SCREENHEIGHT*0.13)",
+        "detail": "GAMES.Flopy Bird.main",
+        "documentation": {}
+    },
+    {
+        "label": "add_book",
+        "kind": 2,
+        "importPath": "GAMES.Class",
+        "description": "GAMES.Class",
+        "peekOfCode": "def add_book():\n    title = input(\"Enter book title: \")\n    author = input(\"Enter author: \")\n    genre = input(\"Enter genre: \")\n    isbn = input(\"Enter ISBN: \")\n    availability = True\n    book = {\n        \"title\": title,\n        \"author\": author,\n        \"genre\": genre,",
+        "detail": "GAMES.Class",
+        "documentation": {}
+    },
+    {
+        "label": "remove_book",
+        "kind": 2,
+        "importPath": "GAMES.Class",
+        "description": "GAMES.Class",
+        "peekOfCode": "def remove_book():\n    isbn = input(\"Enter ISBN of the book to remove: \")\n    for book in library:\n        if book[\"ISBN\"] == isbn:\n            library.remove(book)\n            print(\"Book removed successfully.\")\n            return\n    print(\"Book not found.\")\ndef search_book():\n    keyword = input(\"Enter search keyword: \")",
+        "detail": "GAMES.Class",
+        "documentation": {}
+    },
+    {
+        "label": "search_book",
+        "kind": 2,
+        "importPath": "GAMES.Class",
+        "description": "GAMES.Class",
+        "peekOfCode": "def search_book():\n    keyword = input(\"Enter search keyword: \")\n    matching_books = [book for book in library if keyword.lower() in book[\"title\"].lower()]\n    if not matching_books:\n        print(\"No matching books found.\")\n    else:\n        for book in matching_books:\n            print(\"Title:\", book[\"title\"])\n            print(\"Author:\", book[\"author\"])\n            print(\"Genre:\", book[\"genre\"])",
+        "detail": "GAMES.Class",
+        "documentation": {}
+    },
+    {
+        "label": "library",
+        "kind": 5,
+        "importPath": "GAMES.Class",
+        "description": "GAMES.Class",
+        "peekOfCode": "library = [\n    {\n        \"title\": \"Book1\",\n        \"author\": \"Author1\",\n        \"genre\": \"Fiction\",\n        \"ISBN\": \"123456789\",\n        \"availability\": True,\n    },\n    {\n        \"title\": \"Book2\",",
+        "detail": "GAMES.Class",
+        "documentation": {}
+    },
+    {
+        "label": "reservation_queues",
+        "kind": 5,
+        "importPath": "GAMES.Class",
+        "description": "GAMES.Class",
+        "peekOfCode": "reservation_queues = {}\ndef add_book():\n    title = input(\"Enter book title: \")\n    author = input(\"Enter author: \")\n    genre = input(\"Enter genre: \")\n    isbn = input(\"Enter ISBN: \")\n    availability = True\n    book = {\n        \"title\": title,\n        \"author\": author,",
+        "detail": "GAMES.Class",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "GAMES.Liker",
+        "description": "GAMES.Liker",
+        "peekOfCode": "n = input()\nm = reversed(n)\nif n == m :\n    print(\"Yes\")\nelse:\n    print(\"No\")",
+        "detail": "GAMES.Liker",
+        "documentation": {}
+    },
+    {
+        "label": "m",
+        "kind": 5,
+        "importPath": "GAMES.Liker",
+        "description": "GAMES.Liker",
+        "peekOfCode": "m = reversed(n)\nif n == m :\n    print(\"Yes\")\nelse:\n    print(\"No\")",
+        "detail": "GAMES.Liker",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "dataType",
+        "description": "dataType",
+        "peekOfCode": "age = 21\nname = \"Shoaib 436668386\"\nprint(age)\nprint(name)\nF_name =\"MD\"\nM_name =\"Shoaib\"\nL_name =\"Khan\"\nprint(\"Your name is:\" +' ' + F_name +' ' + M_name +' ' + L_name)",
+        "detail": "dataType",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "dataType",
+        "description": "dataType",
+        "peekOfCode": "name = \"Shoaib 436668386\"\nprint(age)\nprint(name)\nF_name =\"MD\"\nM_name =\"Shoaib\"\nL_name =\"Khan\"\nprint(\"Your name is:\" +' ' + F_name +' ' + M_name +' ' + L_name)",
+        "detail": "dataType",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\", \"apple\", \"cherry\"]\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(len(thislist))\nlist1 = [\"apple\", \"banana\", \"cherry\"]\nlist2 = [1, 5, 7, 9, 3]\nlist3 = [True, False, False]\nprint(list1)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\", \"apple\", \"cherry\"]\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(len(thislist))\nlist1 = [\"apple\", \"banana\", \"cherry\"]\nlist2 = [1, 5, 7, 9, 3]\nlist3 = [True, False, False]\nprint(list1)\nprint(list2)\nprint(list3)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\"]\nprint(len(thislist))\nlist1 = [\"apple\", \"banana\", \"cherry\"]\nlist2 = [1, 5, 7, 9, 3]\nlist3 = [True, False, False]\nprint(list1)\nprint(list2)\nprint(list3)\nlist1 = [\"abc\", 34, True, 40, \"male\"]\nprint(list1)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "list1 = [\"apple\", \"banana\", \"cherry\"]\nlist2 = [1, 5, 7, 9, 3]\nlist3 = [True, False, False]\nprint(list1)\nprint(list2)\nprint(list3)\nlist1 = [\"abc\", 34, True, 40, \"male\"]\nprint(list1)\nthislist = list((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thislist)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "list2",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "list2 = [1, 5, 7, 9, 3]\nlist3 = [True, False, False]\nprint(list1)\nprint(list2)\nprint(list3)\nlist1 = [\"abc\", 34, True, 40, \"male\"]\nprint(list1)\nthislist = list((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "list3",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "list3 = [True, False, False]\nprint(list1)\nprint(list2)\nprint(list3)\nlist1 = [\"abc\", 34, True, 40, \"male\"]\nprint(list1)\nthislist = list((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[1])",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "list1 = [\"abc\", 34, True, 40, \"male\"]\nprint(list1)\nthislist = list((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[1])\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[-1])\nthislist = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\nprint(thislist[0:2])",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = list((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thislist)\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[1])\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[-1])\nthislist = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\nprint(thislist[0:2])\n#Binaray type data\nshoaib = [1,2,3,4,5,6,7,8,9,121,255]",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[1])\nthislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[-1])\nthislist = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\nprint(thislist[0:2])\n#Binaray type data\nshoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb = bytes(shoaib)\nprint(b)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\"]\nprint(thislist[-1])\nthislist = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\nprint(thislist[0:2])\n#Binaray type data\nshoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb = bytes(shoaib)\nprint(b)\n#binary type data byteArray\nShoaib = [1,2,3,4,5,6,7,8,9,121,255]",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "thislist",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "thislist = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]\nprint(thislist[0:2])\n#Binaray type data\nshoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb = bytes(shoaib)\nprint(b)\n#binary type data byteArray\nShoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb1 = bytearray(Shoaib)\nb1[5] = 50",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "shoaib",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "shoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb = bytes(shoaib)\nprint(b)\n#binary type data byteArray\nShoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb1 = bytearray(Shoaib)\nb1[5] = 50\nprint(b1[5])\n# none type data\nx = None",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "b = bytes(shoaib)\nprint(b)\n#binary type data byteArray\nShoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb1 = bytearray(Shoaib)\nb1[5] = 50\nprint(b1[5])\n# none type data\nx = None\nprint(type(x))",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "Shoaib",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "Shoaib = [1,2,3,4,5,6,7,8,9,121,255]\nb1 = bytearray(Shoaib)\nb1[5] = 50\nprint(b1[5])\n# none type data\nx = None\nprint(type(x))\n#list type data\nlist = ['shoaib','khalid','miskat','jesan']\nprint(list)",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "b1",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "b1 = bytearray(Shoaib)\nb1[5] = 50\nprint(b1[5])\n# none type data\nx = None\nprint(type(x))\n#list type data\nlist = ['shoaib','khalid','miskat','jesan']\nprint(list)\nprint(type(list))",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "b1[5]",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "b1[5] = 50\nprint(b1[5])\n# none type data\nx = None\nprint(type(x))\n#list type data\nlist = ['shoaib','khalid','miskat','jesan']\nprint(list)\nprint(type(list))\n#tuple type data",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "x = None\nprint(type(x))\n#list type data\nlist = ['shoaib','khalid','miskat','jesan']\nprint(list)\nprint(type(list))\n#tuple type data\ntup = (3,45,5,6,67,7)\nprint(tup)\nprint(type(tup))",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "list",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "list = ['shoaib','khalid','miskat','jesan']\nprint(list)\nprint(type(list))\n#tuple type data\ntup = (3,45,5,6,67,7)\nprint(tup)\nprint(type(tup))\n#range type\nran = range(6)\nfor i in ran:",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "tup",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "tup = (3,45,5,6,67,7)\nprint(tup)\nprint(type(tup))\n#range type\nran = range(6)\nfor i in ran:\n    print(i)\nprint(\"Compiler Error\")",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "ran",
+        "kind": 5,
+        "importPath": "List",
+        "description": "List",
+        "peekOfCode": "ran = range(6)\nfor i in ran:\n    print(i)\nprint(\"Compiler Error\")",
+        "detail": "List",
+        "documentation": {}
+    },
+    {
+        "label": "upload_file",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def upload_file():\n    if 'file' not in request.files:\n        return jsonify({\"error\": \"No file part\"}), 400\n    file = request.files['file']\n    if file.filename == '':\n        return jsonify({\"error\": \"No selected file\"}), 400\n    file_path = os.path.join(UPLOAD_FOLDER, file.filename)\n    file.save(file_path)\n    # Analyze the image using DeepFace\n    result = DeepFace.analyze(img_path=file_path, actions=['age', 'gender', 'race', 'emotion'])",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = Flask(__name__)\nCORS(app)\n# Ensure the upload folder exists\nUPLOAD_FOLDER = 'uploads'\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\n@app.route('/upload', methods=['POST'])\ndef upload_file():\n    if 'file' not in request.files:\n        return jsonify({\"error\": \"No file part\"}), 400",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "UPLOAD_FOLDER",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "UPLOAD_FOLDER = 'uploads'\nif not os.path.exists(UPLOAD_FOLDER):\n    os.makedirs(UPLOAD_FOLDER)\n@app.route('/upload', methods=['POST'])\ndef upload_file():\n    if 'file' not in request.files:\n        return jsonify({\"error\": \"No file part\"}), 400\n    file = request.files['file']\n    if file.filename == '':\n        return jsonify({\"error\": \"No selected file\"}), 400",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "num1",
+        "kind": 5,
+        "importPath": "StringFormating",
+        "description": "StringFormating",
+        "peekOfCode": "num1 = 20.2\nnum2 = 30.3\nprint(f\"sum is : {num1 + num2}\")\nname = \"MD Shoaib Khan\"\nprint(f\"sum is : {name}\")",
+        "detail": "StringFormating",
+        "documentation": {}
+    },
+    {
+        "label": "num2",
+        "kind": 5,
+        "importPath": "StringFormating",
+        "description": "StringFormating",
+        "peekOfCode": "num2 = 30.3\nprint(f\"sum is : {num1 + num2}\")\nname = \"MD Shoaib Khan\"\nprint(f\"sum is : {name}\")",
+        "detail": "StringFormating",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "StringFormating",
+        "description": "StringFormating",
+        "peekOfCode": "name = \"MD Shoaib Khan\"\nprint(f\"sum is : {name}\")",
+        "detail": "StringFormating",
+        "documentation": {}
+    },
+    {
+        "label": "age",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "age = 21\nname =\"Shoaib\"\nprint(age)\nprint(name)\n\"\"\"\njust print and variable diclair fungtion works\n\"\"\"\nfruits = [\"apple\", \"banana\", \"cherry\"]\nx, y, z = fruits\nprint(x)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "fruits",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "fruits = [\"apple\", \"banana\", \"cherry\"]\nx, y, z = fruits\nprint(x)\nprint(y)\nprint(z)\nx = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x+y+z)\nx = \"Python \"",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "x = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x+y+z)\nx = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "y = \"is \"\nz = \"awesome\"\nprint(x+y+z)\nx = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2\nz = 2",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "z = \"awesome\"\nprint(x+y+z)\nx = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2\nz = 2\nprint(x + y + z)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "x = \"Python \"\ny = \"is \"\nz = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2\nz = 2\nprint(x + y + z)\nx = 2\ny = 2",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "y = \"is \"\nz = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2\nz = 2\nprint(x + y + z)\nx = 2\ny = 2\nz = 2",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "z = \"awesome\"\nprint(x,y,z)\nx = 2\ny = 2\nz = 2\nprint(x + y + z)\nx = 2\ny = 2\nz = 2\nprint(x , y , z)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "x = 2\ny = 2\nz = 2\nprint(x + y + z)\nx = 2\ny = 2\nz = 2\nprint(x , y , z)\nx = 5\ny = \"John\"",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "y = 2\nz = 2\nprint(x + y + z)\nx = 2\ny = 2\nz = 2\nprint(x , y , z)\nx = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "z = 2\nprint(x + y + z)\nx = 2\ny = 2\nz = 2\nprint(x , y , z)\nx = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "x = 2\ny = 2\nz = 2\nprint(x , y , z)\nx = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "y = 2\nz = 2\nprint(x , y , z)\nx = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "z = 2\nprint(x , y , z)\nx = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "x = 5\ny = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "Variables",
+        "description": "Variables",
+        "peekOfCode": "y = \"John\"\nprint(x + y)",
+        "detail": "Variables",
+        "documentation": {}
+    }
+]

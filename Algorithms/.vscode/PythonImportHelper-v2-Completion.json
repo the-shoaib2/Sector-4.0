@@ -1,0 +1,173 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "bin_dir",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "bin_dir = os.path.dirname(abs_file)\nbase = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "base",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "base = bin_dir[: -len(\"Scripts\") - 1]  # strip away the bin part from the __file__, plus the path separator\n# prepend bin to PATH (this file is inside the bin directory)\nos.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"PATH\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"PATH\"] = os.pathsep.join([bin_dir] + os.environ.get(\"PATH\", \"\").split(os.pathsep))\nos.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "os.environ[\"VIRTUAL_ENV\"]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "os.environ[\"VIRTUAL_ENV\"] = base  # virtual env is right above bin directory\n# add the virtual environments libraries to the host python import mechanism\nprev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "prev_length",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "prev_length = len(sys.path)\nfor lib in \"..\\Lib\\site-packages\".split(os.pathsep):\n    path = os.path.realpath(os.path.join(bin_dir, lib))\n    site.addsitedir(path.decode(\"utf-8\") if \"\" else path)\nsys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.path[:]",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.path[:] = sys.path[prev_length:] + sys.path[0:prev_length]\nsys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.real_prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.real_prefix = sys.prefix\nsys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "sys.prefix",
+        "kind": 5,
+        "importPath": "venv.Scripts.activate_this",
+        "description": "venv.Scripts.activate_this",
+        "peekOfCode": "sys.prefix = base",
+        "detail": "venv.Scripts.activate_this",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "1stAlgo",
+        "description": "1stAlgo",
+        "peekOfCode": "n = int(input())\nprint (\"Enter the numbers in the array:\")\narr = list (map (int, input ().split ())) [:n]\nprint (\"The array is:\", arr)",
+        "detail": "1stAlgo",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "1stAlgo",
+        "description": "1stAlgo",
+        "peekOfCode": "arr = list (map (int, input ().split ())) [:n]\nprint (\"The array is:\", arr)",
+        "detail": "1stAlgo",
+        "documentation": {}
+    },
+    {
+        "label": "bubble_sort",
+        "kind": 2,
+        "importPath": "BubbleSort",
+        "description": "BubbleSort",
+        "peekOfCode": "def bubble_sort(arr,n):\n    for i in range(n - 1):\n        j=i\n        for j in range(n  - 1):\n            if arr[j] > arr[j + 1]:\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]  # swap elements if the current\n# Get the number of elements\nn = int(input())\n# Get space-separated input values and convert to a list of integers\narr = list(map(int, input().split()))",
+        "detail": "BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "BubbleSort",
+        "description": "BubbleSort",
+        "peekOfCode": "n = int(input())\n# Get space-separated input values and convert to a list of integers\narr = list(map(int, input().split()))\n# Use the sorted function to sort the array\n# sorted_arr = sorted(arr)\n# Apply Bubble Sort\nbubble_sort(arr,n)\n# Print the sorted array\nprint(\"Sorted Array:\", end=\" \")\nfor i in arr:",
+        "detail": "BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "BubbleSort",
+        "description": "BubbleSort",
+        "peekOfCode": "arr = list(map(int, input().split()))\n# Use the sorted function to sort the array\n# sorted_arr = sorted(arr)\n# Apply Bubble Sort\nbubble_sort(arr,n)\n# Print the sorted array\nprint(\"Sorted Array:\", end=\" \")\nfor i in arr:\n    print(i,end=\" \")\nprint()",
+        "detail": "BubbleSort",
+        "documentation": {}
+    },
+    {
+        "label": "print_hi",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def print_hi(name):\n    # Use a breakpoint in the code line below to debug your script.\n    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.\n# Press the green button in the gutter to run the script.\nif __name__ == '__main__':\n    print_hi('PyCharm')\n# See PyCharm help at https://www.jetbrains.com/help/pycharm/",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "fib",
+        "kind": 2,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "def fib(n, dp = {}):\n    if n not in dp:\n        if n <= 1:\n            dp[n] = n\n        else:\n            dp[n] = fib(n-1, dp) + fib(n-2, dp)\n    return dp[n]\nprint(\"Fibonacci Number is : \", fib(n))",
+        "detail": "test",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "test",
+        "description": "test",
+        "peekOfCode": "n = int(input(\"Enter Value : \"))\ndef fib(n, dp = {}):\n    if n not in dp:\n        if n <= 1:\n            dp[n] = n\n        else:\n            dp[n] = fib(n-1, dp) + fib(n-2, dp)\n    return dp[n]\nprint(\"Fibonacci Number is : \", fib(n))",
+        "detail": "test",
+        "documentation": {}
+    }
+]
